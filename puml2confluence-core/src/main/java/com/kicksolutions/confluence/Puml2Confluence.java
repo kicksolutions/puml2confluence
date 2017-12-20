@@ -13,7 +13,8 @@ import com.kicksolutions.CliArgs;
 public class Puml2Confluence {
 	private static final Logger LOGGER = Logger.getLogger(Puml2Confluence.class.getName());
 	private static final String USAGE = new StringBuilder()
-			.append(" Usage: com.kicksolutions.confluence.Puml2Confluence <options> \n")
+			.append(" Usage: ")
+			.append(Puml2Confluence.class.getName()).append(" <options> \n")
 			.append(" -i <Path of Puml> ").append(" -a <Parent Page Id> ").append(" -u <User Name> ")
 			.append(" -p <Password> ").append(" -l <Conflunce URL> ").append(" -s <Confluenec Space key>")
 			.append(" -t <Title of Page>").toString();
