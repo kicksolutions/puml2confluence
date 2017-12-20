@@ -137,5 +137,13 @@ public class ConfluenceVo {
 
 	public void setPageID(String pageID) {
 		this.pageID = pageID;
+	}
+
+	@Override
+	public String toString() {
+		return "ConfluenceVo [userName=" + userName + ", password=" + password + ", confluenceURL=" + confluenceURL
+				+ ", parentPageID=" + parentPageID + ", specFile=" + specFile + ", title=" + title + ", version="
+				+ version + ", content=" + content + ", spaceKey=" + spaceKey + ", isExistingPage=" + isExistingPage
+				+ ", pageID=" + pageID + "]";
 	}	
 }
