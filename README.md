@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/kicksolutions/swagger2confluence.svg?branch=master)](https://travis-ci.org/kicksolutions/swagger2confluence)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.swagger/swagger-codegen-project/badge.svg?style=plastic)](https://oss.sonatype.org/#nexus-search;gav~io.github.kicksolutions~swagger-confluence-core~~~)
+[![Build Status](https://travis-ci.org/kicksolutions/puml2confluence.svg?branch=master)](https://travis-ci.org/kicksolutions/puml2confluence)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.swagger/swagger-codegen-project/badge.svg?style=plastic)](https://oss.sonatype.org/#nexus-search;gav~io.github.kicksolutions~puml-confluence-core~~~)
 
 # puml2Confluence
 
