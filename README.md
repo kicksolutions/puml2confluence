@@ -21,7 +21,7 @@ Following are the tools which this project internally uses:
 - puml2Confluence internally reads the swagger definition using [Swagger Parser] which then uploads to confluence page
 based on the attributes provided.
 
-It will first Create Page whose Title = Title of API Specified in Swagger then creates child under it with Version-Title of API
+Following is example
 
 ![Swagger-Confluence-Root](examples/root.jpg)
 
@@ -29,10 +29,10 @@ Confluence Page Uses Plant Macro, this will help us to see full view of Plant UM
 
 ## puml2confluence-core: 
 
-This utility takes Swagger Yaml as input and as response it uploads to Confluence Page.
+This utility takes Plant UML as input and as response it uploads to Confluence Page.
 
 Below is the Sample Confluence Page Output which gets imported.
-![Swagger-Confluence-Upload-Sample](examples/swagger.jpg)
+![PlantUML-Confluence-Upload-Sample](examples/swagger.jpg)
 
 ### Usage:
 
