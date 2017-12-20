@@ -4,7 +4,7 @@ import java.util.logging.Logger;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.kicksolutions.cliargs.CliArgs;
+import com.kicksolutions.CliArgs;
 
 /**
  * MSANTOSH
