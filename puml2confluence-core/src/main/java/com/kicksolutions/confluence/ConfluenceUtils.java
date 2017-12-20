@@ -198,6 +198,11 @@ public class ConfluenceUtils {
 				new StringBuilder().append(userName).append(":").append(password).toString().getBytes());
 	}
 
+	/**
+	 * 
+	 * @param confluenceAuthentication
+	 * @return
+	 */
 	private HttpHeaders buildHttpHeaders(final String confluenceAuthentication) {
 		final HttpHeaders headers = new HttpHeaders();
 		headers.set("Authorization", String.format("Basic %s", confluenceAuthentication));

@@ -63,8 +63,7 @@ public class Puml2Confluence {
 	 * @param password
 	 * @param confluenceURL
 	 * @param spaceKey
-	 * @param htmlDocumentationURL
-	 * @param clientkitURL
+	 * @param title
 	 */
 	private void processSwagger2Confluence(String specFile, String parentPageID, String userName, String password,
 			String confluenceURL, String spaceKey, String title) {
