@@ -56,8 +56,6 @@ public class Puml2Confluence {
 	}
 
 	/**
-	 * Title: | |----- V1.0 Title | |----- V1.1 Title
-	 * 
 	 * 
 	 * @param specFile
 	 * @param parentPageID
