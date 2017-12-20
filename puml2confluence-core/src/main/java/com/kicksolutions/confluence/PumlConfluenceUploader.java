@@ -32,7 +32,7 @@ public class PumlConfluenceUploader {
 	 * @param title
 	 * @throws IOException
 	 */
-	public void processPuml2Confluence(String specFile, String parentPageID, String userName, String password,
+	public String processPuml2Confluence(String specFile, String parentPageID, String userName, String password,
 			String confluenceURL, String spaceKey, String title) throws IOException {
 
 		File pumlFile = new File(specFile);
@@ -48,8 +48,10 @@ public class PumlConfluenceUploader {
 
 				ConfluenceVo parentPageVo = createSwaggerPage(new ConfluenceVo(userName, password, confluenceURL, "",
 						parentPageID, "", title, "0", swaggerPageContent, spaceKey, false));
-
+												
 				LOGGER.log(Level.INFO, "Done.... by generating Pages " + parentPageVo.getPageID());
+				
+				return parentPageVo.getPageID();
 			} else {
 				throw new RuntimeException("Puml File provided in input is not valid");
 			}
