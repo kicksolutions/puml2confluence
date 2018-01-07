@@ -33,7 +33,7 @@ public class PumlConfluenceUploader {
 	 * @throws IOException
 	 */
 	public String processPuml2Confluence(String specFile, String parentPageID, String userName, String password,
-			String confluenceURL, String spaceKey, String title) throws IOException {
+			String confluenceURL, String spaceKey, String title,String prefixForConfluencePage) throws IOException {
 
 		File pumlFile = new File(specFile);
 
@@ -43,11 +43,12 @@ public class PumlConfluenceUploader {
 
 			if (StringUtils.isNotEmpty(pumlContents) && pumlContents.contains("@startuml")) {
 				String swaggerPageContent = plantUMLMacroContent(pumlContents);
-
-				LOGGER.log(Level.INFO, "About to generate Page -->" + title);
+				String pageTitle = StringUtils.isEmpty(prefixForConfluencePage) ? title : new StringBuilder().append(prefixForConfluencePage).append(" - ").append(title).toString();
+				
+				LOGGER.log(Level.INFO, "About to generate Page -->" + pageTitle);
 
 				ConfluenceVo parentPageVo = createSwaggerPage(new ConfluenceVo(userName, password, confluenceURL, "",
-						parentPageID, "", title, "0", swaggerPageContent, spaceKey, false));
+						parentPageID, "", pageTitle, "0", swaggerPageContent, spaceKey, false));
 												
 				LOGGER.log(Level.INFO, "Done.... by generating Pages " + parentPageVo.getPageID());
 				
